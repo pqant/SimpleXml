@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<company>
+    <staff id="1001">
+        <firstname>Ali</firstname>
+        <lastname>akarsu</lastname>
+        <nickname>akarsuali</nickname>
+        <salary>100</salary>
+    </staff>
+    <staff id="2001">
+        <firstname>mehmet</firstname>
+        <lastname>kansu</lastname>
+        <nickname>mkansu</nickname>
+        <salary>200</salary>
+    </staff>
+</company>

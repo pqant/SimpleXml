@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Pesticides>
+    <Header>
+        <Creation_Date>03/11/2017 00:15</Creation_Date>
+    </Header>
+    <Substances>
+        <Name>1,1-dichloro-2,2-bis(4-ethylphenyl)ethane (F)</Name>
+        <entry_force>01/09/2008</entry_force>
+        <directive>Reg. (EC) No 149/2008</directive>
+        <Substances_ft>
+            <Footnotes_sub>(F) = Fat soluble</Footnotes_sub>
+        </Substances_ft>
+        <Product>
+            <Product_name>FRUITS, FRESH or FROZEN; TREE NUTS</Product_name>
+            <Product_code>0100000</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Citrus fruits</Product_name>
+            <Product_code>0110000</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Grapefruits (Natsudaidais, Shaddocks/pomelos, Sweeties/oroblancos, Tangelolos, Tangelos (except minneolas)/Ugli®, Other hybrids of Citrus paradisi, not elsewhere mentioned,)</Product_name>
+            <Product_code>0110010</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Oranges (Bergamots, Bitter oranges/sour oranges, Blood oranges, Cara caras, Chinottos, Trifoliate oranges, Other hybrids of Citrus sinensis, not elsewhere mentioned,)</Product_name>
+            <Product_code>0110020</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Lemons (Buddha's hands/Buddha's fingers, Citrons,)</Product_name>
+            <Product_code>0110030</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Limes (Indian sweet limes/Palestine sweet limes, Kaffir limes, Sweet limes/mosambis, Tahiti limes,)</Product_name>
+            <Product_code>0110040</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Mandarins (Calamondins, Clementines, Cleopatra mandarins, Minneolas, Satsumas, Tangerines/dancy mandarins, Tangors, Other hybrids of Citrus reticulata, not elsewhere mentioned,)</Product_name>
+            <Product_code>0110050</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Others</Product_name>
+            <Product_code>0110990</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Tree nuts</Product_name>
+            <Product_code>0120000</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Almonds (Apricot kernels, Bitter almonds, Canarium nuts/galip nuts, Pili nuts,)</Product_name>
+            <Product_code>0120010</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Brazil nuts</Product_name>
+            <Product_code>0120020</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Cashew nuts</Product_name>
+            <Product_code>0120030</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Chestnuts</Product_name>
+            <Product_code>0120040</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Coconuts (Areca nuts/betel nuts,)</Product_name>
+            <Product_code>0120050</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+        <Product>
+            <Product_name>Hazelnuts/cobnuts (Acorns, Filberts,)</Product_name>
+            <Product_code>0120060</Product_code>
+            <MRL>0.01*</MRL>
+            <ApplicationDate>01/09/2008</ApplicationDate>
+        </Product>
+    </Substances>
+</Pesticides>
