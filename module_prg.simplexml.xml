@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_prg.simplexml" default="compile.module.prg.simplexml">
+  <dirname property="module.prg.simplexml.basedir" file="${ant.file.module_prg.simplexml}"/>
+  
+  <property name="module.jdk.home.prg.simplexml" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.prg.simplexml" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.prg.simplexml" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.prg.simplexml" value="-encoding UTF-8 -source 1.6 -target 1.6 ${compiler.args}"/>
+  
+  <property name="prg.simplexml.output.dir" value="${module.prg.simplexml.basedir}/out/production/Prg.SimpleXml"/>
+  <property name="prg.simplexml.testoutput.dir" value="${module.prg.simplexml.basedir}/out/test/Prg.SimpleXml"/>
+  
+  <path id="prg.simplexml.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="prg.simplexml.module.production.classpath">
+    <path refid="${module.jdk.classpath.prg.simplexml}"/>
+    <path refid="library.org.apache.poi:poi:3.17.classpath"/>
+    <path refid="library.commons-io:commons-io:2.6.classpath"/>
+  </path>
+  
+  <path id="prg.simplexml.runtime.production.module.classpath">
+    <pathelement location="${prg.simplexml.output.dir}"/>
+    <path refid="library.org.apache.poi:poi:3.17.classpath"/>
+    <path refid="library.commons-io:commons-io:2.6.classpath"/>
+  </path>
+  
+  <path id="prg.simplexml.module.classpath">
+    <path refid="${module.jdk.classpath.prg.simplexml}"/>
+    <pathelement location="${prg.simplexml.output.dir}"/>
+    <path refid="library.org.apache.poi:poi:3.17.classpath"/>
+    <path refid="library.commons-io:commons-io:2.6.classpath"/>
+  </path>
+  
+  <path id="prg.simplexml.runtime.module.classpath">
+    <pathelement location="${prg.simplexml.testoutput.dir}"/>
+    <pathelement location="${prg.simplexml.output.dir}"/>
+    <path refid="library.org.apache.poi:poi:3.17.classpath"/>
+    <path refid="library.commons-io:commons-io:2.6.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.prg.simplexml">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.prg.simplexml">
+    <patternset refid="excluded.from.module.prg.simplexml"/>
+  </patternset>
+  
+  <path id="prg.simplexml.module.sourcepath">
+    <dirset dir="${module.prg.simplexml.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.prg.simplexml" depends="compile.module.prg.simplexml.production,compile.module.prg.simplexml.tests" description="Compile module Prg.SimpleXml"/>
+  
+  <target name="compile.module.prg.simplexml.production" depends="register.custom.compilers" description="Compile module Prg.SimpleXml; production classes">
+    <mkdir dir="${prg.simplexml.output.dir}"/>
+    <javac2 destdir="${prg.simplexml.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.prg.simplexml}/javac">
+      <compilerarg line="${compiler.args.prg.simplexml}"/>
+      <bootclasspath refid="prg.simplexml.module.bootclasspath"/>
+      <classpath refid="prg.simplexml.module.production.classpath"/>
+      <src refid="prg.simplexml.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.prg.simplexml"/>
+    </javac2>
+    
+    <copy todir="${prg.simplexml.output.dir}">
+      <fileset dir="${module.prg.simplexml.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.prg.simplexml.tests" depends="register.custom.compilers,compile.module.prg.simplexml.production" description="compile module Prg.SimpleXml; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.prg.simplexml" description="cleanup module">
+    <delete dir="${prg.simplexml.output.dir}"/>
+    <delete dir="${prg.simplexml.testoutput.dir}"/>
+  </target>
+</project>
