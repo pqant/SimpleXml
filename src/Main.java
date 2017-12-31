@@ -40,6 +40,7 @@ public class Main {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(xmlFileName);
+            int totalStaff = 0;
 
             NodeList nList = doc.getElementsByTagName("company");
             for (int i = 0; i < nList.getLength(); i++) {
@@ -50,6 +51,7 @@ public class Main {
                     //String substanceName = element.getElementsByTagName("Name").item(0).getTextContent();
                     NodeList staffs = element.getElementsByTagName("staff");
                     for (int j = 0; j < staffs.getLength(); j++) {
+                        totalStaff = staffs.getLength();
                         Node prod = staffs.item(j);
                         if (prod.getNodeType() == Node.ELEMENT_NODE) {
                             Element staff = (Element) prod;
@@ -80,7 +82,7 @@ public class Main {
             workbook.close();
             fileOut.close();
 
-            System.out.println("XmlToExcel finished, processed " + nList.getLength() + " staff(s)!");
+            System.out.println("XmlToExcel finished, processed " + totalStaff + " staff(s)!");
             /* ****************************************************************************************** */
 
         } catch (Exception e) {
